@@ -1,0 +1,194 @@
+[    0.000000] OF: fdt: Ignoring memory range 0x80000000 - 0x80200000
+[    0.000000] Linux version 5.7.0-1-riscv64 (debian-kernel@lists.debian.org) (gcc version 9.3.0 (Debian 9.3.0-13), GNU ld (GNU Binutils for Debian) 2.34) #1 SMP Debian 5.7.6-1 (2020-06-24)
+[    0.000000] Initial ramdisk at: 0x(____ptrval____) (53655406 bytes)
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] On node 0 totalpages: 261632
+[    0.000000]   DMA32 zone: 4088 pages used for memmap
+[    0.000000]   DMA32 zone: 0 pages reserved
+[    0.000000]   DMA32 zone: 261632 pages, LIFO batch:63
+[    0.000000] software IO TLB: mapped [mem 0xba73e000-0xbe73e000] (64MB)
+[    0.000000] SBI specification v0.2 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x8
+[    0.000000] SBI v0.2 TIME extension detected
+[    0.000000] SBI v0.2 IPI extension detected
+[    0.000000] SBI v0.2 RFENCE extension detected
+[    0.000000] SBI v0.2 HSM extension detected
+[    0.000000] riscv: ISA extensions acdfimsu
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 26 pages/cpu s68568 r8192 d29736 u106496
+[    0.000000] pcpu-alloc: s68568 r8192 d29736 u106496 alloc=26*4096
+[    0.000000] pcpu-alloc: [0] 0
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 257544
+[    0.000000] Kernel command line: root=LABEL=rootfs rw noquiet root=LABEL=rootfs
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] Sorting __ex_table...
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 896608K/1046528K available (5982K kernel code, 2989K rwdata, 2048K rodata, 498K init, 467K bss, 149920K reserved, 0K cma-reserved)
+[    0.000000] random: get_random_u64 called from __kmem_cache_create+0x42/0x49c with crng_init=0
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 24506 entries in 96 pages
+[    0.000000] ftrace: allocated 96 pages with 2 groups
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 0, nr_irqs: 0, preallocated irqs: 0
+[    0.000000] plic: mapped 53 interrupts with 1 handlers for 2 contexts.
+[    0.000000] riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [0]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000187] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.005176] Console: colour dummy device 80x25
+[    0.010221] printk: console [tty0] enabled
+[    0.011700] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=40000)
+[    0.011943] pid_max: default: 32768 minimum: 301
+[    0.013262] LSM: Security Framework initializing
+[    0.014379] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    0.017456] AppArmor: AppArmor initialized
+[    0.017577] TOMOYO Linux initialized
+[    0.018882] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.018964] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.058113] rcu: Hierarchical SRCU implementation.
+[    0.065809] smp: Bringing up secondary CPUs ...
+[    0.065955] smp: Brought up 1 node, 1 CPU
+[    0.079396] devtmpfs: initialized
+[    0.088033] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.088270] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.094639] thermal_sys: Registered thermal governor 'fair_share'
+[    0.094731] thermal_sys: Registered thermal governor 'step_wise'
+[    0.100651] NET: Registered protocol family 16
+[    0.103332] audit: initializing netlink subsys (disabled)
+[    0.112017] audit: type=2000 audit(0.076:1): state=initialized audit_enabled=0 res=1
+[    0.132645] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.511683] iommu: Default domain type: Translated
+[    0.515710] vgaarb: loaded
+[    0.528988] NetLabel: Initializing
+[    0.529056] NetLabel:  domain hash size = 128
+[    0.529088] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.530334] NetLabel:  unlabeled traffic allowed by default
+[    0.531762] clocksource: Switched to clocksource riscv_clocksource
+[    0.606493] VFS: Disk quotas dquot_6.6.0
+[    0.606734] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.611686] AppArmor: AppArmor Filesystem Enabled
+[    0.629652] NET: Registered protocol family 2
+[    0.636680] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.636861] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.637256] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.637481] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.638621] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.638940] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.641204] NET: Registered protocol family 1
+[    0.641606] NET: Registered protocol family 44
+[    0.641878] PCI: CLS 0 bytes, default 64
+[    0.648161] Trying to unpack rootfs image as initramfs...
+[    4.894305] Freeing initrd memory: 52396K
+[    4.897292] Initialise system trusted keyrings
+[    4.899472] Key type blacklist registered
+[    4.900225] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    4.911656] zbud: loaded
+[    4.915179] integrity: Platform Keyring initialized
+[    4.915293] Key type asymmetric registered
+[    4.915412] Asymmetric key parser 'x509' registered
+[    4.915638] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    4.916313] io scheduler mq-deadline registered
+[    4.921533] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    4.935997] 10000000.uart: ttyS0 at MMIO 0x10000000 (irq = 2, base_baud = 230400) is a 16550A
+[    4.968803] printk: console [ttyS0] enabled
+[    4.978508] mousedev: PS/2 mouse device common for all mice
+[    4.984786] goldfish_rtc 101000.rtc: registered as rtc0
+[    4.985967] goldfish_rtc 101000.rtc: setting system clock to 2020-10-03T12:15:17 UTC (1601727317)
+[    4.989286] syscon-poweroff poweroff: pm_power_off already claimed (____ptrval____) sbi_shutdown
+[    4.990078] syscon-poweroff: probe of poweroff failed with error -16
+[    4.992178] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.994431] NET: Registered protocol family 10
+[    5.316367] Segment Routing with IPv6
+[    5.318077] mip6: Mobile IPv6
+[    5.318503] NET: Registered protocol family 17
+[    5.319503] mpls_gso: MPLS GSO support
+[    5.320442] registered taskstats version 1
+[    5.320770] Loading compiled-in X.509 certificates
+[    5.407924] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[    5.410285] Loaded X.509 cert 'Debian Secure Boot Signer: 00a7468def'
+[    5.411767] zswap: loaded using pool lzo/zbud
+[    5.415913] Key type ._fscrypt registered
+[    5.416259] Key type .fscrypt registered
+[    5.416515] Key type fscrypt-provisioning registered
+[    5.418395] AppArmor: AppArmor sha1 policy hashing enabled
+[    6.095625] Freeing unused kernel memory: 496K
+[    6.097530] Run /init as init process
+[    6.097941]   with arguments:
+[    6.097978]     /init
+[    6.097998]     noquiet
+[    6.098017]   with environment:
+[    6.098043]     HOME=/
+[    6.098058]     TERM=linux
+[    7.575504] virtio: module verification failed: signature and/or required key missing - tainting kernel
+[    8.240390] virtio_blk virtio0: [vda] 20971520 512-byte logical blocks (10.7 GB/10.0 GiB)
+[    8.257559] vda: detected capacity change from 0 to 10737418240
+[    8.356709]  vda: vda1
+[    9.516978] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null)
+[   10.376524] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[   10.598821] random: fast init done
+[   10.846683] systemd[1]: Inserted module 'autofs4'
+[   10.934832] systemd[1]: systemd 245.6-3 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+[   10.939153] systemd[1]: Detected architecture riscv64.
+[   10.984184] systemd[1]: Set hostname to <debian>.
+[   13.643649] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.674747] systemd[1]: Created slice system-getty.slice.
+[   13.681351] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.690405] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   13.694973] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.698271] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   13.704102] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   13.716447] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   13.720521] systemd[1]: Reached target Local Encrypted Volumes.
+[   13.725300] systemd[1]: Reached target Paths.
+[   13.727798] systemd[1]: Reached target Remote File Systems.
+[   13.730620] systemd[1]: Reached target Slices.
+[   13.733432] systemd[1]: Reached target Swap.
+[   13.742646] systemd[1]: Listening on Syslog Socket.
+[   13.747870] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   13.752555] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   13.762647] systemd[1]: Listening on Journal Audit Socket.
+[   13.768161] systemd[1]: Listening on Journal Socket (/dev/log).
+[   13.776049] systemd[1]: Listening on Journal Socket.
+[   13.781916] systemd[1]: Listening on udev Control Socket.
+[   13.786384] systemd[1]: Listening on udev Kernel Socket.
+[   13.790986] systemd[1]: Reached target Sockets.
+[   13.824356] systemd[1]: Mounting Huge Pages File System...
+[   13.900234] systemd[1]: Mounting POSIX Message Queue File System...
+[   13.987451] systemd[1]: Mounting Kernel Debug File System...
+[   14.130393] systemd[1]: Mounting Kernel Trace File System...
+[   14.279439] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[   14.317177] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   14.319707] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   14.546992] systemd[1]: Starting Journal Service...
+[   14.680163] systemd[1]: Starting Load Kernel Modules...
+[   14.804411] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   14.927994] systemd[1]: Starting udev Coldplug all Devices...
+[   15.149121] systemd[1]: Mounted Huge Pages File System.
+[   15.171557] systemd[1]: Mounted POSIX Message Queue File System.
+[   15.210711] systemd[1]: Mounted Kernel Debug File System.
+[   15.223218] systemd[1]: Mounted Kernel Trace File System.
+[   15.381443] systemd[1]: Finished Create list of static device nodes for the current kernel.
+[   15.541782] systemd[1]: Finished Load Kernel Modules.
+[   15.571731] systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+[   15.591637] systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+[   15.683878] systemd[1]: Starting Apply Kernel Variables...
+[   15.795333] EXT4-fs (vda1): re-mounted. Opts: user_xattr,errors=remount-ro
+[   15.973630] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   16.010319] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   16.026135] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[   16.107809] systemd[1]: Starting Load/Save Random Seed...
+[   16.243662] systemd[1]: Starting Create System Users...
+[   16.309922] systemd[1]: Started Journal Service.
+[   17.302421] systemd-journald[135]: Received client request to flush runtime journal.
+[   19.380127] random: crng init done
+[   19.380619] random: 7 urandom warning(s) missed due to ratelimiting
+
